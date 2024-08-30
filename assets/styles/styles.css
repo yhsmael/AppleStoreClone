@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Text';
-    src: url('../FONTS/sf-pro-text-regular.ttf') format('opentype');
+    src: url('../fonts/sf-pro-text-regular.ttf') format('opentype');
     font-weight: normal;
 }
 
@@ -28,8 +28,8 @@ body {
 .navbar a {
     font-size: 12px;
     text-decoration: none;
-     color: rgba(0, 0, 0, 0.8);
-     width: 50px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 50px;
 }
 
 
@@ -129,6 +129,7 @@ body {
     grid-template-columns: repeat(3,400px);
     justify-content: end;
     column-gap: 20px;
+    margin-bottom: 54px;
 
     
 }
@@ -145,7 +146,7 @@ body {
     font-weight: bold;
     line-height: 25px;
     letter-spacing: 0.374px;
-    padding-bottom: 25px;
+    padding-bottom: 14px;
 
 }
 
@@ -246,12 +247,67 @@ body {
     padding-top: 10px;
 }
 
-.section-grid-helper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+
 
 .card-helper-grid img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-grid-helper{
+    display: grid;
+    grid-template-columns: repeat(3,480px);
+    column-gap: 20px;
+    margin-left: 130px;
+    overflow: hidden;
+    padding: 10px 0 40px;
+}
+
+.card-helper-grid {
+    height: 500px;
+    position: relative;
+}
+
+.self-help-container .heding-text {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0.374px;
+    padding-bottom: 14px;
+    padding-left: 155px;
+}
+
+.self-help-container .heding-text  span{
+    color: rgb(110, 110, 115);
+}
+.info-especialista {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+}
+.info-especialista h3 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    color: rgb(110, 110, 115);
+    padding-bottom: 8px;
+}
+
+.info-especialista p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.info-especialista .sub-text {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    list-style: 1.2;
+    margin: 0;
+    padding-top: 10px;
+    width: 400px;
 }
